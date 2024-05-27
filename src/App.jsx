@@ -7,7 +7,7 @@ function App() {
   const [ data, setData] = useState([]);
 
   const fetchData = async () => {
-    await axios.get('/api/questoes')
+    await axios.get('https://projeto-backend-node.onrender.com')
     .then((response) => {
       setData(response.data)
     })
