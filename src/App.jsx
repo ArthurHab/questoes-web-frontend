@@ -23,7 +23,14 @@ function App() {
   return (
     <>
     { data.map((item, index) => (
-      <div className='m-10 flex flex-col gap-3' key={index}>
+      <div className='m-12 flex-col gap-3' key={index}>
+        <div className="flex gap-4 flex-wrap">
+          <p>Banca: {item.banca}</p>
+          <p>Orgão: {item.orgao}</p>
+          <p>Ano: {item.ano}</p>
+          <p>Prova: {item.prova}</p>
+        </div>
+        <div className='bg-slate-400 h-1 mb-10 mt-4'></div>
         <p>{item.questao.primeiroEnunciado}</p>
         {/* <div>Imagens</div> */}
         {/* <p>{item.questao.segundoEnunciado}</p> */}
